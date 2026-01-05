@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune University | MBA Program</title>
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="css/base/variables.css">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/typography.css">
+    <link rel="stylesheet" href="css/base/utilities.css">
+    
+    <!-- Components CSS -->
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/cards.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/sections.css">
+    
+    <!-- Layout CSS -->
+    <link rel="stylesheet" href="css/layout/grid.css">
+    
+    <!-- Sections CSS -->
+    <link rel="stylesheet" href="css/sections/header.css">
+    <link rel="stylesheet" href="css/sections/hero.css">
+    <link rel="stylesheet" href="css/sections/overview.css">
+    <link rel="stylesheet" href="css/sections/courses.css">
+    <link rel="stylesheet" href="css/sections/highlights.css">
+    <link rel="stylesheet" href="css/sections/facilities.css">
+    <link rel="stylesheet" href="css/sections/footer.css">
+    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/layout/responsive.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="main-header" data-module="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h1 class="college-name">Pune University</h1>
+                    <p class="college-location">Pune, Maharashtra</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#courses">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#highlights">Highlights</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#facilities">Facilities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary apply-btn" href="#apply">Apply Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero" data-module="animations">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Master of Business Administration (MBA)</h1>
+                    <p class="hero-description">
+                        Transform your career with our industry-oriented MBA program. 
+                        Gain practical knowledge, develop leadership skills, and build 
+                        a strong professional network with Pune University's premier 
+                        business education.
+                    </p>
+                    <a href="#apply" class="btn btn-primary btn-lg hero-apply-btn">Apply Now</a>
+                    <a href="#courses" class="btn btn-outline-light btn-lg ms-2">Explore Courses</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Pune University Campus" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- College Overview Section -->
+    <section class="overview-section section-padding" id="overview" data-module="animations">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>College Overview</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="overview-content">
+                        <h3>About Pune University</h3>
+                        <p>
+                            Pune University, established in 1949, is one of India's premier 
+                            institutions for higher education. Our MBA program is designed 
+                            to equip students with the skills needed to excel in today's 
+                            dynamic business environment.
+                        </p>
+                        <p>
+                            With a legacy of excellence spanning over seven decades, 
+                            we offer a transformative learning experience through our 
+                            distinguished faculty, industry collaborations, and 
+                            state-of-the-art infrastructure.
+                        </p>
+                        <ul class="overview-list">
+                            <li><i class="fas fa-check-circle"></i> NAAC 'A+' Accredited</li>
+                            <li><i class="fas fa-check-circle"></i> Ranked among top 20 universities in India</li>
+                            <li><i class="fas fa-check-circle"></i> 150+ corporate partners for placements</li>
+                            <li><i class="fas fa-check-circle"></i> 95% placement record in last 5 years</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="overview-stats" data-module="counters">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="stat-card text-center">
+                                    <div class="stat-number" data-count="75">0</div>
+                                    <div class="stat-text">Years of Excellence</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="stat-card text-center">
+                                    <div class="stat-number" data-count="5000">0</div>
+                                    <div class="stat-text">MBA Alumni</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="stat-card text-center">
+                                    <div class="stat-number" data-count="95">0</div>
+                                    <div class="stat-text">Placement Rate</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="stat-card text-center">
+                                    <div class="stat-number" data-count="50">0</div>
+                                    <div class="stat-text">Faculty Members</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses / MBA Specialization Section -->
+    <section class="courses-section section-padding bg-light" id="courses" data-module="animations">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>MBA Specializations</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Choose from our diverse range of MBA specializations</p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Marketing Management</h4>
+                        <p>Learn strategic marketing, consumer behavior, brand management, and digital marketing strategies.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 2 Years</span>
+                            <span><i class="fas fa-users"></i> 60 Seats</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h4>Financial Management</h4>
+                        <p>Master corporate finance, investment banking, risk management, and financial analysis.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 2 Years</span>
+                            <span><i class="fas fa-users"></i> 60 Seats</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4>Human Resource Management</h4>
+                        <p>Develop skills in talent management, organizational behavior, and HR strategy development.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 2 Years</span>
+                            <span><i class="fas fa-users"></i> 60 Seats</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Information Technology</h4>
+                        <p>Combine business management with IT strategy, systems analysis, and technology management.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 2 Years</span>
+                            <span><i class="fas fa-users"></i> 60 Seats</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h4>Operations Management</h4>
+                        <p>Learn supply chain management, quality control, process optimization, and logistics.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 2 Years</span>
+                            <span><i class="fas fa-users"></i> 60 Seats</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h4>International Business</h4>
+                        <p>Understand global markets, cross-cultural management, and international trade strategies.</p>
+                        <div class="course-details">
+                            <span><i class="fas fa-clock"></i> 2 Years</span>
+                            <span><i class="fas fa-users"></i> 60 Seats</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Highlights Section -->
+    <section class="highlights-section section-padding" id="highlights" data-module="animations">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Key Highlights</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Why choose our MBA program</p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Expert Faculty</h4>
+                        <p>Learn from industry veterans and academic experts with decades of experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Industry Partnerships</h4>
+                        <p>Strong collaborations with 150+ companies for internships and placements.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4>Modern Infrastructure</h4>
+                        <p>State-of-the-art classrooms, libraries, and recreational facilities on campus.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4>Placement Assistance</h4>
+                        <p>Dedicated placement cell with 95% placement record in top companies.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Global Exposure</h4>
+                        <p>International student exchange programs and global immersion opportunities.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Alumni Network</h4>
+                        <p>Access to a strong network of 5000+ alumni across various industries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities / Benefits Section -->
+    <section class="facilities-section section-padding bg-light" id="facilities" data-module="animations">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Facilities & Benefits</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">World-class infrastructure for holistic development</p>
+            </div>
+            <div class="row mt-5 align-items-center">
+                <div class="col-lg-4 mb-4">
+                    <div class="facility-item">
+                        <div class="facility-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h4>Modern Library</h4>
+                        <p>Digital library with 50,000+ books, journals, and online databases.</p>
+                    </div>
+                    <div class="facility-item">
+                        <div class="facility-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h4>Wi-Fi Campus</h4>
+                        <p>High-speed internet connectivity across the entire campus.</p>
+                    </div>
+                    <div class="facility-item">
+                        <div class="facility-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4>Research Labs</h4>
+                        <p>Advanced labs for business analytics and market research.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="facility-image text-center">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=1412&q=80" 
+                             alt="University Library" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="facility-item">
+                        <div class="facility-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h4>Hostel Facilities</h4>
+                        <p>Safe and comfortable accommodation for outstation students.</p>
+                    </div>
+                    <div class="facility-item">
+                        <div class="facility-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h4>Sports Complex</h4>
+                        <p>Indoor and outdoor sports facilities for physical fitness.</p>
+                    </div>
+                    <div class="facility-item">
+                        <div class="facility-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4>Cafeteria & Food Court</h4>
+                        <p>Multiple dining options with hygienic and nutritious food.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Contact Details -->
+    <footer class="footer-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-about">
+                        <h3>Pune University</h3>
+                        <p>One of India's premier institutions for higher education with a legacy of excellence since 1949.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-contact">
+                        <h4>Contact Information</h4>
+                        <ul class="contact-list">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Ganeshkhind Road, Pune, Maharashtra 411007</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+91 20 2569 0000</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>admissions@puniversity.edu.in</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-apply" id="apply">
+                        <h4>Apply for MBA Program</h4>
+                        <p>Start your application for the next academic session.</p>
+                        <a href="#" class="btn btn-primary btn-apply-footer" data-module="notifications">Apply Now</a>
+                        <p class="mt-3 small">Admission Helpline: +91 98765 43210</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2023 Pune University. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Core JavaScript -->
+    <script src="js/core/config.js"></script>
+    <script src="js/core/helpers.js"></script>
+    
+    <!-- Modules JavaScript -->
+    <script src="js/modules/smooth-scroll.js"></script>
+    <script src="js/modules/animations.js"></script>
+    <script src="js/modules/navbar.js"></script>
+    <script src="js/modules/notifications.js"></script>
+    <script src="js/modules/counters.js"></script>
+    
+    <!-- Events and Main JavaScript -->
+    <script src="js/core/events.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* Section Common Styles */
+
+.section-padding {
+    padding: var(--space-xxl) 0;
+}
+
+.section-title {
+    margin-bottom: var(--space-xxl);
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.section-subtitle {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-top: var(--space-sm);
+}
+
+.underline {
+    height: 4px;
+    width: 80px;
+    background: var(--secondary-color);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Container adjustments */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+/* Row and column adjustments */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col {
+    flex: 1 0 0%;
+    padding: 0 15px;
+}

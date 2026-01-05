@@ -1,0 +1,306 @@
+/* Responsive Design - Pune University Landing Page */
+
+/* Tablets and below (≤ 991px) */
+@media (max-width: 991.98px) {
+    /* General */
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    /* Header */
+    .college-name {
+        font-size: 1.5rem;
+    }
+    
+    .navbar-nav .nav-item:last-child {
+        margin-top: 10px;
+    }
+    
+    .apply-btn {
+        margin-left: 0;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        padding: 80px 0;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+    
+    /* Overview Section */
+    .overview-content {
+        margin-bottom: 40px;
+    }
+    
+    /* Courses Section */
+    .course-card {
+        margin-bottom: 25px;
+    }
+    
+    /* Facilities Section */
+    .facility-item {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Footer */
+    .footer-about,
+    .footer-contact,
+    .footer-apply {
+        margin-bottom: 40px;
+    }
+}
+
+/* Mobile devices (≤ 767px) */
+@media (max-width: 767.98px) {
+    /* General */
+    .section-padding {
+        padding: 50px 0;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Header */
+    .navbar-brand {
+        padding: 0.5rem 0;
+    }
+    
+    .college-name {
+        font-size: 1.3rem;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .hero-image {
+        margin-top: 30px;
+    }
+    
+    /* Overview Section */
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .overview-list li {
+        font-size: 0.95rem;
+    }
+    
+    /* Courses Section */
+    .course-card {
+        padding: 25px 20px;
+    }
+    
+    .course-icon {
+        font-size: 2rem;
+    }
+    
+    /* Highlights Section */
+    .highlight-card {
+        padding: 25px 15px;
+    }
+    
+    .highlight-icon {
+        font-size: 2rem;
+        height: 70px;
+        width: 70px;
+    }
+    
+    /* Facilities Section */
+    .facility-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .facility-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    /* Footer */
+    .footer-section {
+        padding: 60px 0 20px;
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .contact-list li {
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .contact-list i {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .footer-contact h4::after,
+    .footer-apply h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Small mobile devices (≤ 575px) */
+@media (max-width: 575.98px) {
+    /* General */
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+    
+    /* Hero Section */
+    .hero-title {
+        font-size: 1.6rem;
+    }
+    
+    .hero-apply-btn,
+    .btn-outline-light {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .btn-outline-light {
+        margin-left: 0 !important;
+    }
+    
+    /* Stats */
+    .stat-card {
+        padding: 20px 15px;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    /* Footer */
+    .footer-about,
+    .footer-contact,
+    .footer-apply {
+        margin-bottom: 30px;
+    }
+    
+    .footer-bottom {
+        font-size: 0.85rem;
+    }
+}
+
+/* Large desktops (≥ 1200px) */
+@media (min-width: 1200px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Animation adjustments for mobile */
+@media (max-width: 767.98px) {
+    .fade-in,
+    .slide-up {
+        transition-duration: 0.5s;
+    }
+    
+    /* Disable some animations on mobile for performance */
+    .hero-image {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    
+    .facility-image:hover img {
+        transform: none;
+    }
+}
+
+/* Print styles */
+@media print {
+    .hero-section,
+    .apply-btn,
+    .btn-apply-footer,
+    .social-icons,
+    .navbar,
+    .scroll-to-top {
+        display: none !important;
+    }
+    
+    body {
+        color: #000;
+        background: #fff;
+        font-size: 12pt;
+    }
+    
+    .section-padding {
+        padding: 20px 0;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    h1, h2, h3, h4 {
+        page-break-after: avoid;
+    }
+    
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #000080;
+        --secondary-color: #ff4500;
+        --text-dark: #000000;
+        --text-light: #333333;
+    }
+    
+    .hero-section {
+        background: #000080;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

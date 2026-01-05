@@ -1,0 +1,119 @@
+/* Courses Section Styles */
+
+.courses-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.courses-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(26, 35, 126, 0.03) 0%, transparent 70%);
+    z-index: 0;
+}
+
+.courses-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.course-card {
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-normal);
+    z-index: 1;
+}
+
+.course-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    opacity: 0;
+    transition: var(--transition-normal);
+    z-index: -1;
+}
+
+.course-card:hover::before {
+    opacity: 1;
+}
+
+.course-card:hover {
+    color: white;
+}
+
+.course-card:hover h4,
+.course-card:hover p,
+.course-card:hover .course-details,
+.course-card:hover .course-details i {
+    color: white;
+}
+
+.course-card:hover .course-icon {
+    color: white;
+    transform: scale(1.1) rotate(5deg);
+}
+
+.course-icon {
+    transition: var(--transition-normal);
+}
+
+.course-card:hover .course-details {
+    border-top-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Staggered animation for course cards */
+.course-card:nth-child(1) { animation-delay: 0.1s; }
+.course-card:nth-child(2) { animation-delay: 0.2s; }
+.course-card:nth-child(3) { animation-delay: 0.3s; }
+.course-card:nth-child(4) { animation-delay: 0.4s; }
+.course-card:nth-child(5) { animation-delay: 0.5s; }
+.course-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Hover effect for course cards */
+.course-card:hover .course-icon i {
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Section title animation */
+.courses-section .section-title {
+    animation: fadeInDown 0.8s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .course-card {
+        padding: 25px 20px;
+    }
+    
+    .course-icon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .course-card {
+        margin-bottom: var(--space-lg);
+    }
+    
+    .course-card h4 {
+        font-size: 1.3rem;
+    }
+}

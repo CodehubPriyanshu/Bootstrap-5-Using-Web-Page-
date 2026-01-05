@@ -1,0 +1,112 @@
+/* Card Components */
+
+.stat-card {
+    background-color: var(--bg-light);
+    padding: 30px 20px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    height: 100%;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.stat-text {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-top: var(--space-sm);
+}
+
+.course-card {
+    background-color: var(--bg-white);
+    padding: 30px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    height: 100%;
+    border-top: 4px solid var(--primary-color);
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+    border-top-color: var(--secondary-color);
+}
+
+.course-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--space-lg);
+}
+
+.course-card h4 {
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+}
+
+.course-card p {
+    color: var(--text-light);
+    margin-bottom: var(--space-lg);
+}
+
+.course-details {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-light);
+    font-size: var(--font-sm);
+    border-top: 1px solid var(--border-light);
+    padding-top: var(--space-md);
+}
+
+.course-details i {
+    margin-right: var(--space-xs);
+    color: var(--secondary-color);
+}
+
+.highlight-card {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: var(--bg-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    height: 100%;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.highlight-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--space-lg);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(26, 35, 126, 0.1);
+    border-radius: var(--radius-circle);
+    margin: 0 auto var(--space-lg);
+}
+
+.highlight-card h4 {
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+}
+
+.highlight-card p {
+    color: var(--text-light);
+}

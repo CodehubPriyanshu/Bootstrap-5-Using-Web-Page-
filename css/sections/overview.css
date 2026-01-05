@@ -1,0 +1,140 @@
+/* Overview Section Styles */
+
+.overview-content h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--space-lg);
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+.overview-content p {
+    margin-bottom: var(--space-lg);
+    color: var(--text-light);
+    animation: fadeInLeft 0.8s ease-out 0.2s both;
+}
+
+.overview-list {
+    margin-top: var(--space-lg);
+    animation: fadeInLeft 0.8s ease-out 0.4s both;
+}
+
+.overview-list li {
+    margin-bottom: var(--space-sm);
+    display: flex;
+    align-items: flex-start;
+}
+
+.overview-list i {
+    color: var(--secondary-color);
+    margin-right: var(--space-sm);
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.overview-stats {
+    animation: fadeInRight 0.8s ease-out 0.6s both;
+}
+
+/* Stats counter animation */
+.stat-number {
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-number::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1s ease-out;
+}
+
+.stat-number.animated::after {
+    transform: scaleX(1);
+}
+
+/* Overview section background pattern */
+.overview-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.overview-section::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(26, 35, 126, 0.05);
+    border-radius: var(--radius-circle);
+    z-index: 0;
+}
+
+.overview-section::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 111, 0, 0.05);
+    border-radius: var(--radius-circle);
+    z-index: 0;
+}
+
+.overview-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .overview-content {
+        margin-bottom: var(--space-xl);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .overview-content h3 {
+        font-size: 1.8rem;
+    }
+    
+    .stat-card {
+        padding: 20px 15px;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

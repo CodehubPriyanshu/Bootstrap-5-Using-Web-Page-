@@ -1,0 +1,97 @@
+/* Typography Styles */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: var(--space-md);
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: var(--font-display);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: var(--font-xxxl);
+}
+
+h3 {
+    font-size: var(--font-xxl);
+}
+
+h4 {
+    font-size: var(--font-xl);
+}
+
+h5 {
+    font-size: var(--font-lg);
+}
+
+h6 {
+    font-size: var(--font-md);
+}
+
+p {
+    margin-bottom: var(--space-md);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition-normal);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-light {
+    color: var(--text-light);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.underline {
+    height: 4px;
+    width: 80px;
+    background: var(--secondary-color);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.section-title {
+    margin-bottom: var(--space-xxl);
+}
+
+.section-title h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: var(--space-sm);
+}
+
+.section-subtitle {
+    color: var(--text-light);
+    font-size: var(--font-lg);
+    margin-top: var(--space-sm);
+}

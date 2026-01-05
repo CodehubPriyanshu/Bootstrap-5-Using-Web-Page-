@@ -1,0 +1,131 @@
+/* Main CSS File - Imports all other CSS files */
+
+/* This file is intentionally kept minimal as all styles are imported via separate files in HTML */
+/* It can be used for any overriding styles or quick fixes */
+
+/* Import statements if using a build tool */
+/*
+@import 'base/variables.css';
+@import 'base/reset.css';
+@import 'base/typography.css';
+@import 'base/utilities.css';
+@import 'components/buttons.css';
+@import 'components/cards.css';
+@import 'components/navbar.css';
+@import 'components/sections.css';
+@import 'sections/header.css';
+@import 'sections/hero.css';
+@import 'sections/overview.css';
+@import 'sections/courses.css';
+@import 'sections/highlights.css';
+@import 'sections/facilities.css';
+@import 'sections/footer.css';
+@import 'layout/grid.css';
+@import 'layout/responsive.css';
+*/
+
+/* Custom styles that don't fit elsewhere */
+
+/* Notification styles */
+.notification {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 1080;
+    max-width: 350px;
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    animation: slideIn 0.3s ease;
+    transform: translateX(0);
+}
+
+.notification.notification-success {
+    border-left: 4px solid #28a745;
+}
+
+.notification.notification-error {
+    border-left: 4px solid #dc3545;
+}
+
+.notification.notification-info {
+    border-left: 4px solid #17a2b8;
+}
+
+.notification-content {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-light);
+    line-height: 1;
+    padding: 0;
+    margin-left: 15px;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@media (max-width: 767px) {
+    .notification {
+        max-width: calc(100% - 40px);
+        right: 10px;
+        left: 10px;
+    }
+}
+
+/* Loading spinner */
+.spinner {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 0.25rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Custom focus styles for better accessibility */
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px;
+    z-index: 9999;
+    text-decoration: none;
+}
+
+.skip-to-content:focus {
+    top: 0;
+}
+
+/* Print styles enhancement */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+    
+    .page-break {
+        page-break-before: always;
+    }
+}
